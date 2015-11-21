@@ -200,14 +200,7 @@ public class Gui extends javax.swing.JFrame {
         String adress = t_adress.getText();
         if (adress.equals("")) {
             adress = google;
-        } else if (adress.equals("anselm") || adress.equals("Anselm") || adress.equals("Anselm Binninger")) {
-            message("Ich hab genau gewusst, dass\n"
-                    + "du deinen Namen eingibst :D\n\nSpast :D");
-        } else if (adress.equals("fredi") || adress.equals("Fredi") || adress.equals("Frederik Mattwich")) {
-            message("Deine Mutter ist so fett, wenn sie\n"
-                    + "auf den Times Square geht, wird sie wegen\n"
-                    + "illegaler Massenveranstaltung verhaftet.");
-        }
+        } 
         if (cb_loop.isSelected()) {
             testing = new Loop(this, adress);
         } else {
@@ -250,7 +243,6 @@ public class Gui extends javax.swing.JFrame {
     private void cb_soundActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_soundActionPerformed
     }//GEN-LAST:event_cb_soundActionPerformed
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton b_help;
     private javax.swing.JButton b_kill;
     private javax.swing.JButton b_start;
@@ -264,7 +256,6 @@ public class Gui extends javax.swing.JFrame {
     private javax.swing.JLabel l_took;
     private javax.swing.JLabel l_tries;
     private javax.swing.JTextField t_adress;
-    // End of variables declaration//GEN-END:variables
 
     public void setConnected(boolean connected) {
         tries++;
